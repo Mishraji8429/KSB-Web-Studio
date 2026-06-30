@@ -1030,10 +1030,9 @@ SCROLL REVEAL
 =========================*/
 
 .reveal{
-
-opacity:0;
-
-transform:translateY(70px);
+opacity:1;
+transform:translateY(0);
+}
 
 transition:all .8s ease;
 

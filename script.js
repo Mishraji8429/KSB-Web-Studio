@@ -81,6 +81,50 @@ section.classList.add("active");
 
 }
 
+
 window.addEventListener("scroll", revealSections);
 
 revealSections();
+// Animated Counter
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target = +counter.getAttribute("data-target");
+
+const count = +counter.innerText;
+
+const increment = Math.ceil(target / 60);
+
+if (count < target) {
+
+counter.innerText = count + increment;
+
+setTimeout(updateCounter, 25);
+
+} else {
+
+if(target === 999){
+
+counter.innerText = "₹999";
+
+}else if(target === 100){
+
+counter.innerText = "100%";
+
+}else{
+
+counter.innerText = target + "+";
+
+}
+
+}
+
+};
+
+updateCounter();
+
+});

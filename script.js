@@ -46,3 +46,14 @@ btn.style.transform="translateY(0px)";
 });
 
 console.log("KSB Web Studio Loaded Successfully 🚀");
+// Mobile Menu
+
+const menuBtn = document.getElementById("menu-btn");
+
+const navMenu = document.getElementById("nav-menu");
+
+menuBtn.addEventListener("click",()=>{
+
+navMenu.classList.toggle("active");
+
+});

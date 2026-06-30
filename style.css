@@ -1025,3 +1025,24 @@ color:#2563EB;
 font-size:14px;
 
 }
+/*=========================
+SCROLL REVEAL
+=========================*/
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(70px);
+
+transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}

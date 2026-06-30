@@ -128,3 +128,16 @@ counter.innerText = target + "+";
 updateCounter();
 
 });
+// ==========================
+// Loading Screen
+// ==========================
+
+window.addEventListener("load", () => {
+
+setTimeout(() => {
+
+document.getElementById("loader").classList.add("hide");
+
+}, 1800);
+
+});
